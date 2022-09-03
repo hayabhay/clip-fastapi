@@ -1,0 +1,18 @@
+# Development packages only
+
+-r requirements-base.txt
+
+# These are dev only dependencies
+black==22.6.0  # https://github.com/psf/black
+coverage==6.4.4  # https://github.com/nedbat/coveragepy
+
+# Code quality
+# ------------------------------------------------------------------------------
+flake8==5.0.4  # https://github.com/PyCQA/flake8
+flake8-isort==4.2.0  # https://github.com/gforcada/flake8-isort
+
+# Testing
+# ------------------------------------------------------------------------------
+mypy==0.971  # https://github.com/python/mypy
+pre-commit==2.20.0  # https://github.com/pre-commit/pre-commit
+pytest==7.1.2  # https://github.com/pytest-dev/pytest
