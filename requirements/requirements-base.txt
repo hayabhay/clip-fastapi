@@ -1,0 +1,17 @@
+# Base dependencies
+
+fastapi==0.80.0 # https://github.com/tiangolo/fastapi
+ftfy==6.1.1 # https://github.com/rspeer/python-ftfy
+git+https://github.com/openai/CLIP.git
+httpx==0.23.0  # https://github.com/encode/httpx/
+Pillow==9.2.0  # https://github.com/python-pillow/Pillow
+python-dotenv==0.20.0 # https://github.com/theskumar/python-dotenv
+regex==2022.8.17  # https://github.com/mrabarnett/mrab-regex
+
+# Torch packages
+# ------------------------------------------------------------------------------
+# Pass --extra-index-url https://download.pytorch.org/whl/cpu while dockerizing for GCR
+torch==1.12.1 # https://github.com/pytorch/pytorch
+torchvision==0.13.1 # https://github.com/pytorch/vision
+tqdm==4.64.0 # https://github.com/tqdm/tqdm
+uvicorn==0.18.3 # https://github.com/encode/uvicorn
