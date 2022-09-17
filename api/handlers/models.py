@@ -4,7 +4,9 @@ from typing import Tuple
 import clip
 from config import DEVICE, MODELS_DIR
 
+logging.basicConfig()
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 # This is a global variable to cache loaded models
 # This can be set in the loader function to have multiple models in memory or just one

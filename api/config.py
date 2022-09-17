@@ -19,5 +19,5 @@ MODELS_DIR.mkdir(exist_ok=True)
 # Clip specific variables
 MAX_TEXT_LENGTH = 4096
 DEFAULT_CLIP_MODEL = "ViT-B/32"
-DEVICE = device = "cuda" if torch.cuda.is_available() else "cpu"
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 AVAILABLE_MODELS = clip.available_models()
