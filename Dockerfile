@@ -1,10 +1,8 @@
 # Start with official python base image
 FROM python:3.10-slim
 
-# install git
 RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y git
+    apt-get upgrade -y
 
 # Set working directory to app
 WORKDIR /api

@@ -5,8 +5,10 @@ from io import BytesIO
 import httpx
 from PIL import Image
 
-# Setup logger & environment variables
+# Setup logger
+logging.basicConfig()
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 
 # Function to load an image from the web, gs or a binary string
